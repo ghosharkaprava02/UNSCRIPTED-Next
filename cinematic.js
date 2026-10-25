@@ -19,7 +19,7 @@
   return ()=>{cancelAnimationFrame(frame);resize.disconnect();visibility.disconnect();};
  }
  function prepare(){cleanup();cleanup=()=>{};const hero=main.querySelector('.hero');if(hero){cleanup=scene(hero);hero.querySelector('h2').classList.add('title-arrive');}
-  const heading=hero&&main.querySelector('.page-heading');if(heading){const crawl=document.createElement('div');crawl.className='perspective-crawl heading-crawl';crawl.setAttribute('aria-hidden','true');crawl.innerHTML='<div>YOUR LIFE.<br>YOUR AUTHORITY.<br><br>THE FUTURE IS<br>STILL UNWRITTEN.<br><br>KEEP THE RIGHT<br>TO CHOOSE.</div>';heading.append(crawl);}sync();
+  const note=main.querySelector('.note-card');if(note){const crawl=document.createElement('div');crawl.className='perspective-crawl';crawl.setAttribute('aria-hidden','true');crawl.innerHTML='<div>YOUR LIFE.<br>YOUR AUTHORITY.<br><br>THE FUTURE IS<br>STILL UNWRITTEN.<br><br>KEEP THE RIGHT<br>TO CHOOSE.</div>';note.append(crawl);}sync();
  }
  new MutationObserver(prepare).observe(main,{childList:true});prepare();
  reduced.addEventListener('change',sync);document.addEventListener('visibilitychange',sync);
@@ -28,3 +28,4 @@
   main.addEventListener('pointerout',event=>{const hero=event.target.closest('.hero');if(hero&&!hero.contains(event.relatedTarget)){hero.style.setProperty('--scene-x','0px');hero.style.setProperty('--scene-y','0px');}},{passive:true});
  }
 })();
+
