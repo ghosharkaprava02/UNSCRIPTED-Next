@@ -18,7 +18,7 @@ You can also download `index.html` and double-click it. All code, artwork and st
 4. **Intent contracts:** adjust scope, caps, recipients, freshness and expiry; inspect the rule evaluation.
 5. **Decision passports:** inspect and export the contract, proposal, intent, rules and simulated outcome.
 
-The action gateway animation illustrates permission routing. It is not live AI activity. Motion pauses outside the viewport, and reduced-motion preferences are respected.
+The purple action gateway illustrates permission routing. A drifting starfield, floating typography, orbital labels, and a slow perspective crawl give the interface a space-cinematic feel. These are decorative animations, not live AI activity. Use **Pause motion** in the top bar to pause them. Motion pauses outside the viewport, and reduced-motion preferences are respected.
 
 ## Independence
 
@@ -28,4 +28,4 @@ Original: https://ghosharkaprava02.github.io/DA25C003_Flipkart-APM-/
 
 ## Source
 
-`index.html` is the self-contained published build. `engine.js`, `app.js`, `styles.css`, `motion.js`, `next.css`, and `brand.svg` are the readable implementation files. `motion.js` changes presentation only and never grants permission or submits decisions. Seeded records are labeled simulated; the audit is editable local demo data, not signed evidence.
+`index.html` is the self-contained published build. `engine.js`, `app.js`, `styles.css`, `motion.js`, `next.css`, `palette.css`, `cinematic.js`, `cinematic.css`, and `brand.svg` are the readable implementation files. Motion scripts change presentation only and never grant permission or submit decisions. Seeded records are labeled simulated; the audit is editable local demo data, not signed evidence.
